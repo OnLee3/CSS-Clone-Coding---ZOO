@@ -1,0 +1,39 @@
+@import "_reset";
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 560px));
+  grid-template-rows: repeat(auto-fill, minmax(170px, 370px));
+  header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: grid;
+  }
+  .container {
+    height: 45vh;
+    display: grid;
+    grid-template-rows: 1fr 35px;
+    .imgBox {
+      background-image: url(https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3424&q=80);
+      background-size: cover;
+      background-position: center;
+    }
+    .titleBox {
+      display: flex;
+      padding: 15px;
+      align-items: center;
+    }
+  }
+}
